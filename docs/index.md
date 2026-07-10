@@ -77,4 +77,5 @@ Include:
 - What kinds of real business problems this approach could help answer
 
 ### Images
-![Total Sales by Month](./docs/images/Figure_4B.png)
+
+![Total Sales by Month](/docs/images/Figure_4B.png)
