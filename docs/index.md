@@ -35,8 +35,8 @@ Describe your custom data mining and exploration work.
 
 ### Basis and Data
 
-<p>This project consisted of three .csv files of raw data, below are my inital observations.</p>
-    customers_data.csv</b>
+<b>This project consisted of three .csv files of raw data, below are my inital observations.</b>
+    <b>customers_data.csv</b>
     - **Initial Analysis:** This file consist of 4 columns Customer ID, Name, Region, and Join Date and has 202 rows.
     -  **Possible Quality Issues:** Name format is not consistent, Region format is not consistent
     products_data.csv
