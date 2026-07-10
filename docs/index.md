@@ -35,16 +35,16 @@ Describe your custom data mining and exploration work.
 
 ### Basis and Data
 
-This project consisted of three .csv files of raw data, below are my inital observations.
-    *customers_data.csv
-      **Initial Analysis:** This file consist of 4 columns Customer ID, Name, Region, and Join Date and has 202 rows.
-      **Possible Quality Issues:** Name format is not consistent, Region format is not consistent
-    *products_data.csv
-      **Initial Analysis:** This file consist of 4 columns Product ID, Product Name, Category, and Unit Price and has 101 rows.
-      **Possible Quality Issues:** Product names need to be verified
-    *sales_data.csv
-      **Initial Analysis:** **This file consist of 7 columns Transaction, Sales Date, Customer ID, Product ID, Store ID, Campaign ID, and Sales Amount and has 2401 rows.
-      **Possible Quality Issues:** Campaign column is not consist with several rows missing, due to number of row possibility of duplicates
+This project consisted of three .csv files of raw data, below are my inital observations.</b>
+    customers_data.csv</b>
+    - **Initial Analysis:** This file consist of 4 columns Customer ID, Name, Region, and Join Date and has 202 rows.
+    -  **Possible Quality Issues:** Name format is not consistent, Region format is not consistent
+    products_data.csv
+    - **Initial Analysis:** This file consist of 4 columns Product ID, Product Name, Category, and Unit Price and has 101 rows.
+    -  **Possible Quality Issues:** Product names need to be verified
+    sales_data.csv
+    -  **Initial Analysis:** **This file consist of 7 columns Transaction, Sales Date, Customer ID, Product ID, Store ID, Campaign ID, and Sales Amount and has 2401 rows.
+    -  **Possible Quality Issues:** Campaign column is not consist with several rows missing, due to number of row possibility of duplicates
 
 ### Mining Approach
 
@@ -72,19 +72,17 @@ Second observation there are major inconsitencies with formatting that can cause
 **Observations Thoughts**
   In later modules wants to explore looking at forecasting and trends
 
-### Summary
-
-Summarize your custom data mining work.
-
-## Ending Note
+### Ending Note
 This project has me exploring three data sets by using pandas and matplotlib and building on what we learned last week from python and VS Code.
 
-## Learning Note
+### Learning Note
 This week I used what I learned from this exploration and reseach to add data labels on to the charts to better showcase their results.
 
-# Real-Life Thoughts
+### Real-Life Thoughts
 In business setting the lessons learned this week will help aid in quality control. The reasons behind this thought is discovering how universial python and basic coding is.
 
 ### Images
 
-![Total Sales by Month](/docs/images/Figure_4B.png)
+<img src="[images/photo.jpg](https://github.com/cjjade-debug/bintel-02-mining/blob/main/docs/images/Figure_4B.png)" alt="Total Sales by Month">
+
+<img src="[images/photo.jpg](https://github.com/cjjade-debug/bintel-02-mining/blob/main/docs/images/Figure_3B.png)" alt="Product Price Distribution">
