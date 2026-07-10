@@ -45,7 +45,6 @@ from bizintel.utils_data import (
     summarize_numeric,
 )
 from bizintel.utils_logger import LOG, log_header
-from bizintel.utils_viz import plot_line
 
 # === DECLARE GLOBAL CONSTANTS AND CONFIGURATION ===
 
@@ -202,22 +201,53 @@ def plot_sales_trend(df_sales: pd.DataFrame) -> None:
     df_trend: pd.DataFrame = grouped.reset_index()
     df_trend["YearMonth"] = df_trend["YearMonth"].astype(str)
 
-    # Plot the sales trend as a line chart
-    # Pass in the following arguments:
-    # - df: the DataFrame to plot (df_trend)
-    # - x: the column for the x-axis (YearMonth)
-    # - y: the column for the y-axis (SaleAmount)
-    # - title: the chart title
-    # - xlabel: the x-axis label
-    # - ylabel: the y-axis label
-    plot_line(
-        df=df_trend,
-        x="YearMonth",
-        y="SaleAmount",
-        title="Total Sales by Month",
-        xlabel="Month",
-        ylabel="Total Sales Amount ($)",
+    # Create figure and axes for the line chart
+    fig, ax = plt.subplots(figsize=(12, 6))
+
+    # Plot the line chart
+    ax.plot(
+        df_trend["YearMonth"],
+        df_trend["SaleAmount"],
+        marker='o',
+        linewidth=2,
+        markersize=8,
+        color='steelblue',
     )
+
+    # Add data labels on each data point
+    # Iterate through each point in the trend data
+    for i, (_month, amount) in enumerate(
+        zip(df_trend["YearMonth"], df_trend["SaleAmount"], strict=False)
+    ):
+        # Format the amount as currency for readability
+        label: str = f'${amount:,.0f}'
+        # Add text label above each point
+        # xytext offsets the label position slightly above the point
+        # ha='center' centers the text horizontally
+        # va='bottom' positions the text above the point
+        ax.annotate(
+            label,
+            xy=(i, amount),
+            xytext=(0, 10),
+            textcoords='offset points',
+            ha='center',
+            va='bottom',
+            fontsize=9,
+        )
+
+    # Set the chart title and axis labels
+    ax.set_title("Total Sales by Month", fontsize=14, fontweight='bold')
+    ax.set_xlabel("Month", fontsize=11)
+    ax.set_ylabel("Total Sales Amount ($)", fontsize=11)
+
+    # Rotate x-axis labels for better readability
+    plt.xticks(rotation=45, ha='right')
+
+    # Add grid for easier reading
+    ax.grid(True, alpha=0.3, linestyle='--')
+
+    # Use tight_layout to adjust spacing
+    plt.tight_layout()
 
     LOG.info("Sales trend chart created")
 
