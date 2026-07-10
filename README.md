@@ -136,7 +136,6 @@ You accidentally started Python interactive mode.
 It happens.
 Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 
-
 ## Findings and Visuals
 
 In your custom project:
@@ -144,7 +143,6 @@ In your custom project:
 - your figures and narrative should reflect your work
 - this `README.md` should include your commands, process, and visuals
 - `docs/index.md` should include your narrative
-
 
 ![Product Price Distribution](./docs/images/Figure_3B.png)
 
