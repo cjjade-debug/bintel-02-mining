@@ -86,6 +86,6 @@ In business setting the lessons learned this week will help aid in quality contr
 
 ### Images
 
-<img src="[images/photo.jpg](https://github.com/cjjade-debug/bintel-02-mining/blob/main/docs/images/Figure_4B.png)" alt="Total Sales by Month">
+![Product Price Distribution](/docs/images/Figure_4B.png)
 
-<img src="[images/photo.jpg](https://github.com/cjjade-debug/bintel-02-mining/blob/main/docs/images/Figure_3B.png)" alt="Product Price Distribution">
+![Total Sales by Month](/docs/images/Figure_3B.png)
