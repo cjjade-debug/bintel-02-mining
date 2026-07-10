@@ -62,6 +62,17 @@ def plot_bar(
         ax=ax,
     )
 
+    # Add data labels automatically on top of the bars
+    for container in bar.containers:
+        bar.bar_label(container, padding=3, fmt='%.1f')
+
+    bar.set_title(f"{title} (CLOSE chart to continue)")
+    bar.set_xlabel(xlabel)
+    bar.set_ylabel(ylabel)
+
+    plt.tight_layout()
+    plt.show()
+
     bar.set_title(f"{title} (CLOSE chart to continue)")
     bar.set_xlabel(xlabel)
     bar.set_ylabel(ylabel)
