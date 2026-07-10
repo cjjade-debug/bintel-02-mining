@@ -121,7 +121,23 @@ def plot_price_distribution(df_products: pd.DataFrame) -> None:
     # To find color strings that work in matplotlib,
     # see https://matplotlib.org/stable/gallery/color/named_colors.html
 
-    ax.hist(prices.dropna(), bins=10, color="steelblue", edgecolor="white")
+    n, bins, patches = ax.hist(
+        prices.dropna(), bins=10, color="steelblue", edgecolor="white"
+    )
+
+    # Add data labels on top of each bar
+    # n contains the count (height) of each bar
+    # bins contains the edges of each bin
+    # We iterate through each bar and add a text label showing the count
+    for _i, (count, patch) in enumerate(zip(n, patches, strict=False)):
+        # Get the x-coordinate (center of the bar)
+        x_pos = patch.get_x() + patch.get_width() / 2
+        # Get the y-coordinate (height of the bar)
+        y_pos = count
+        # Add text label above the bar
+        # ha='center' centers the text horizontally
+        # va='bottom' positions the text above the bar
+        ax.text(x_pos, y_pos, f'{int(count)}', ha='center', va='bottom', fontsize=9)
 
     # Set the title for the chart
     # And remind users to close the chart window to continue the workflow
