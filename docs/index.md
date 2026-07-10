@@ -86,6 +86,6 @@ In business setting the lessons learned this week will help aid in quality contr
 
 ### Images
 
-![Product Price Distribution](/docs/images/Figure_4B.png)
+![Product Price Distribution](./images/Figure_4B.png)
 
 ![Total Sales by Month](./images/Figure_3B.png)
