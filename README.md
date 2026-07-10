@@ -136,20 +136,8 @@ You accidentally started Python interactive mode.
 It happens.
 Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 
-## Example Output (Remove this Section after You Verify)
-
-```shell
-| INFO | ML | ========================
-| INFO | ML | Executed successfully!
-| INFO | ML | ========================
-```
 
 ## Findings and Visuals
-
-Take screenshots of your charts and provide them here with a discussion.
-In Markdown, display a figure using:
-an exclamation mark immediately followed by square brackets containing a useful caption
-immediately followed by parentheses containing the relative path to your figure.
 
 In your custom project:
 
@@ -157,11 +145,10 @@ In your custom project:
 - this `README.md` should include your commands, process, and visuals
 - `docs/index.md` should include your narrative
 
-Replace these placeholders with screenshots from your own project run:
 
-![Total Sales by Region](./docs/images/Figure_3B.png)
+![Product Price Distribution](./docs/images/Figure_3B.png)
 
-![Total Sales by Product Category](./docs/images/Figure_4B.png)
+![Total Sales by Month](./docs/images/Figure_4B.png)
 
 ## Project Documentation
 

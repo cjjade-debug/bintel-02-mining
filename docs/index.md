@@ -21,19 +21,14 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
+The modifications that were made to this project, was the adding of the data labels onto the charts.
 
-Include:
+The main reason for this change was visulaization. Having the data on the chart gives it a better look, but also helps relay the information.
 
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
+This change was confirmed when I ran the script, and the terminal let me know it has been exectuted. I knew it had been exectued because two new charts, with the data displayed appeared as popouts.
 
-Compared with the example project,
-explain what is different and why the change matters.
+I found the change of adding the data to be challening, but also enlightening. I have become more comfortable with the coding language, which will hopefully help ease me into more
 
-Was it easy, or surprisingly challenging and why do you think so?
 
 ## Phase 5. Custom Project
 
@@ -81,4 +76,5 @@ Include:
 - What you learned
 - What kinds of real business problems this approach could help answer
 
-Display at least one chart or screenshot showing your work.
+### Images
+![Total Sales by Month](./docs/images/Figure_4B.png)
