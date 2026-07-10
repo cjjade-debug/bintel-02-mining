@@ -76,13 +76,13 @@ Second observation there are major inconsitencies with formatting that can cause
 
 Summarize your custom data mining work.
 
-**Ending Note**
+## Ending Note
 This project has me exploring three data sets by using pandas and matplotlib and building on what we learned last week from python and VS Code.
 
-**Learning Note**
+## Learning Note
 This week I used what I learned from this exploration and reseach to add data labels on to the charts to better showcase their results.
 
-**Real-Life Thoughts**
+# Real-Life Thoughts
 In business setting the lessons learned this week will help aid in quality control. The reasons behind this thought is discovering how universial python and basic coding is.
 
 ### Images
