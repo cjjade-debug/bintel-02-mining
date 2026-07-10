@@ -35,8 +35,8 @@ Describe your custom data mining and exploration work.
 
 ### Basis and Data
 
-<b>This project consisted of three .csv files of raw data, below are my inital observations.</b>
-    <b>customers_data.csv</b>
+This project consisted of three .csv files of raw data, below are my inital observations.</b>
+    customers_data.csv
     - **Initial Analysis:** This file consist of 4 columns Customer ID, Name, Region, and Join Date and has 202 rows.
     -  **Possible Quality Issues:** Name format is not consistent, Region format is not consistent
     products_data.csv
@@ -73,12 +73,15 @@ Second observation there are major inconsitencies with formatting that can cause
   In later modules wants to explore looking at forecasting and trends
 
 ### Ending Note
+
 This project has me exploring three data sets by using pandas and matplotlib and building on what we learned last week from python and VS Code.
 
 ### Learning Note
+
 This week I used what I learned from this exploration and reseach to add data labels on to the charts to better showcase their results.
 
 ### Real-Life Thoughts
+
 In business setting the lessons learned this week will help aid in quality control. The reasons behind this thought is discovering how universial python and basic coding is.
 
 ### Images
